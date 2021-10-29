@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 
 # Created by https://www.toptal.com/developers/gitignore/api/laravel
 # Edit at https://www.toptal.com/developers/gitignore?templates=laravel
 
 ### Laravel ###
+=======
+>>>>>>> Initial commit
 /vendor/
 node_modules/
 npm-debug.log
@@ -26,5 +29,8 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+<<<<<<< HEAD
 
 # End of https://www.toptal.com/developers/gitignore/api/laravel
+=======
+>>>>>>> Initial commit
