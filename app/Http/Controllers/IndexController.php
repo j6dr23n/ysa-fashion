@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Auth;
 
 class IndexController extends Controller
 {
+    public function countdown()
+    {
+        return view('countdown');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -27,24 +31,24 @@ class IndexController extends Controller
             $categories = Category::orderBy('id','desc')->take(8)->get();
             $recommendedItems = Product::inRandomOrder()->take(12)->get();
             $latestItems = Product::orderBy('id','desc')->take(12)->get();
-            $categories1 = Category::where('p_id',0)->orderBy('id','desc')->first();
-            $categories2 = Category::where('p_id',1)->orderBy('id','desc')->first();
-            $categories3 = Category::where('p_id',2)->orderBy('id','desc')->first();
+            $categories1 = Category::where('id',1)->orderBy('id','desc')->first();
+            $categories2 = Category::where('id',2)->orderBy('id','desc')->first();
+            $categories3 = Category::where('id',3)->orderBy('id','desc')->first();
             $promotionsItems = Product::where('promotions',true)->orderBy('id','desc')->take(12)->get();
             $promotion = Promotion::orderBy('id','desc')->take(2)->get();
             
             $categoryProduct1 = Product::with('categories')->whereHas('categories',function (Builder $query) {
-                $categories1 = Category::where('p_id',0)->orderBy('id','desc')->first();
+                $categories1 = Category::where('id',1)->orderBy('id','desc')->first();
                 $query->where('slug',$categories1->slug);
             })->take(8)->get();
 
             $categoryProduct2 = Product::with('categories')->whereHas('categories',function (Builder $query) {
-                $categories2 = Category::where('p_id',1)->orderBy('id','desc')->first();
+                $categories2 = Category::where('id',2)->orderBy('id','asc')->first();
                 $query->where('slug',$categories2->slug);
             })->take(8)->get();
 
             $categoryProduct3 = Product::with('categories')->whereHas('categories',function (Builder $query) {
-                $categories3 = Category::where('p_id',2)->orderBy('id','desc')->first();
+                $categories3 = Category::where('id',3)->orderBy('id','desc')->first();
                 $query->where('slug',$categories3->slug);
             })->take(8)->get();
 
