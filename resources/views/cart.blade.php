@@ -21,6 +21,7 @@
             <div class="container">
                 <div class="ps-section__header">
                     <h1>ဈေးခြင်း({{ Cart::count() }})</h1>
+                    <br>
                     @if (session()->has('success_message'))
                         <div class="alert alert-success">
                             {{ session()->get('success_message') }}
