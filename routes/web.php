@@ -27,7 +27,8 @@ use TCG\Voyager\Facades\Voyager;
 |
 */
 
-Route::get('/',[IndexController::class,'countdown'])->name('index.page');
+Route::get('/home_ysa',[IndexController::class,'index'])->name('index.page');
+Route::get('/',[IndexController::class,'countdown'])->name('index.countdown');
 
 Route::get('/shop',[ShopController::class,'index'])->name('shop.index');
 Route::get('/promotion',[ShopController::class,'promotion'])->name('promotion.index');
