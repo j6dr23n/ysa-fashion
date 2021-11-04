@@ -24,7 +24,7 @@ class CreateProductsTable extends Migration
             $table->string('image')->nullable();
             $table->text('images')->nullable();
             $table->unsignedInteger('quantity')->default(10);
-            $table->string('color');
+            $table->string('color')->nullable();
             $table->string('color_name');
             $table->boolean('promotions')->default(false);
             $table->integer('discountPercent')->nullable();

@@ -58,7 +58,7 @@
                                 <div class="ps-product__info">
                                     <h1>{{ $product->name }}</h1>
                                     <div class="ps-product__meta"></div>
-                                    <h4 class="ps-product__price">{{ presentPrice($product->price * (1 - $product->discountPercent / 100)) }} <del style="{{ $product->discountPercent != null ? 'display:initial;': 'display:none;' }}">{{ presentPrice($product->price) }} </del> <small style="{{ $product->discountPercent != null ? 'display:initial;': 'display:none;' }} font-size:14px;"> {{ $product->discountPercent }}% off</small></h4>
+                                    <h4 class="ps-product__price">{{ presentPrice($product->price * (1 - $product->discountPercent / 100)) }} <del style="{{ $product->discountPercent != null ? 'display:initial;': 'display:none;' }}">{{ presentPrice($product->price) }} </del>&nbsp; <small style="{{ $product->discountPercent != null ? 'display:initial;': 'display:none;' }} font-size:14px;"> {{ $product->discountPercent }}% off</small></h4>
                                     <div class="ps-product__desc">
                                         <ul class="ps-list--dot">
                                             <li> {{ $product->details }}</li>

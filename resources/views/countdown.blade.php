@@ -36,7 +36,7 @@
             <div class="ps-page__content"><img src="img/coming-soon.jpg" alt="">
                 <figure>
                     <figcaption>NEW STORE WE BE LAUNCHED IN:</figcaption>
-                    <ul class="ps-countdown" data-time="November 4, 2021 00:00:00">
+                    <ul class="ps-countdown" data-time="November 6, 2021 00:00:00">
                         <li><span class="days"></span>
                             <p>Days</p>
                         </li>

@@ -171,6 +171,7 @@
 @stop
 
 @section('javascript')
+<script src="https://cdn.tiny.cloud/1/0in9bwqgy3phbzorrzsi5my43y2816b3samhi6wuosk7sdbn/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
         var params = {};
         var $file;
@@ -241,6 +242,11 @@
                 $('#confirm_delete_modal').modal('hide');
             });
             $('[data-toggle="tooltip"]').tooltip();
+        });
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+            toolbar_mode: 'floating',
         });
     </script>
 @stop
