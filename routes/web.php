@@ -5,6 +5,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\ConfirmationController;
 use App\Http\Controllers\CouponsController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\FaceBookController;
 use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\OrderController;
@@ -52,13 +53,6 @@ Route::get('/about',[PagesController::class,'aboutUs'])->name('pages.aboutUs');
 Route::get('/comming-soon',[PagesController::class,'commingSoon'])->name('pages.commingSoon');
 Route::get('/faqs',[PagesController::class,'faqs'])->name('pages.faqs');
 
-Route::get('logout', function ()
-{
-    auth()->logout();
-    Session()->flush();
-
-    return Redirect::to('/');
-})->name('logout');
 
 route::get('/empty',function (){
     Cart::instance('saveCart')->destroy();
@@ -89,5 +83,18 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/cart/switchToSaveCart/{product}',[CartController::class,'switchToSaveCart'])->name('cart.switchToSaveCart');
 
     Route::delete('/saveCart/{product}',[SaveCartController::class,'destroy'])->name('saveCart.destroy');
+    Route::get('logout', function ()
+    {
+        Auth::logout();
+        Session()->flush();
+
+        return Redirect::to('/');
+    })->name('logout');
     Route::post('/saveCart/switchToCart/{product}',[SaveCartController::class,'switchToCart'])->name('saveCart.switchToCart');
+});
+
+// Facebook Login URL
+Route::prefix('facebook')->name('facebook.')->group( function(){
+    Route::get('auth', [FaceBookController::class, 'loginUsingFacebook'])->name('login');
+    Route::get('callback', [FaceBookController::class, 'callbackFromFacebook'])->name('callback');
 });
