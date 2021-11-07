@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Laravel\Socialite\Facades\Socialite;
 
-class FaceBookController extends Controller
+class SocialiteController extends Controller
 {
 /**
  * Login Using Facebook
@@ -37,5 +37,36 @@ class FaceBookController extends Controller
        } catch (\Throwable $th) {
           throw $th;
        }
+   }
+   /**
+  * Redirect the user to the Google authentication page.
+  *
+  * @return \Illuminate\Http\Response
+  */
+   public function loginUsingGoogle()
+   {
+      return Socialite::driver('google')->redirect();
+   }
+
+   public function callbackFromGoogle()
+   {
+      try {
+         $user = Socialite::driver('google')->user();
+         dd($user);
+  
+         $saveUser = User::updateOrCreate([
+             'google_id' => $user->getId(),
+         ],[
+             'name' => $user->getName(),
+             'email' => $user->getEmail(),
+             'password' => Hash::make($user->getName().'@'.$user->getId())
+              ]);
+  
+         Auth::login($saveUser);
+  
+         return redirect()->route('index.page');
+         } catch (\Throwable $th) {
+            throw $th;
+         }
    }
 }

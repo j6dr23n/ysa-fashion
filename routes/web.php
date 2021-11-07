@@ -11,6 +11,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\SaveCartController;
 use App\Http\Controllers\ShopController;
+use App\Http\Controllers\SocialiteController;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
@@ -88,6 +89,12 @@ Route::middleware(['auth'])->group(function () {
 
 // Facebook Login URL
 Route::prefix('facebook')->name('facebook.')->group( function(){
-    Route::get('auth', [FaceBookController::class, 'loginUsingFacebook'])->name('login');
-    Route::get('callback', [FaceBookController::class, 'callbackFromFacebook'])->name('callback');
+    Route::get('auth', [SocialiteController::class, 'loginUsingFacebook'])->name('login');
+    Route::get('callback', [SocialiteController::class, 'callbackFromFacebook'])->name('callback');
+});
+
+//Google Login URL
+Route::prefix('google')->name('google.')->group( function(){
+    Route::get('redirect',[SocialiteController::class, 'loginUsingGoogle'])->name('login');
+    Route::get('callback', [SocialiteController::class, 'callbackFromGoogle'])->name('callback');
 });
