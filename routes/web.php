@@ -5,11 +5,13 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\ConfirmationController;
 use App\Http\Controllers\CouponsController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\FaceBookController;
 use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\SaveCartController;
 use App\Http\Controllers\ShopController;
+use App\Http\Controllers\SocialiteController;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
@@ -27,8 +29,8 @@ use TCG\Voyager\Facades\Voyager;
 |
 */
 
+// Route::get('/home_ysa',[IndexController::class,'index'])->name('index.page');
 Route::get('/',[IndexController::class,'index'])->name('index.page');
-Route::get('/home_ysa',[IndexController::class,'countdown'])->name('index.countdown');
 
 Route::get('/shop',[ShopController::class,'index'])->name('shop.index');
 Route::get('/promotion',[ShopController::class,'promotion'])->name('promotion.index');
@@ -52,13 +54,6 @@ Route::get('/about',[PagesController::class,'aboutUs'])->name('pages.aboutUs');
 Route::get('/comming-soon',[PagesController::class,'commingSoon'])->name('pages.commingSoon');
 Route::get('/faqs',[PagesController::class,'faqs'])->name('pages.faqs');
 
-Route::get('logout', function ()
-{
-    auth()->logout();
-    Session()->flush();
-
-    return Redirect::to('/');
-})->name('logout');
 
 route::get('/empty',function (){
     Cart::instance('saveCart')->destroy();
@@ -90,4 +85,16 @@ Route::middleware(['auth'])->group(function () {
 
     Route::delete('/saveCart/{product}',[SaveCartController::class,'destroy'])->name('saveCart.destroy');
     Route::post('/saveCart/switchToCart/{product}',[SaveCartController::class,'switchToCart'])->name('saveCart.switchToCart');
+});
+
+// Facebook Login URL
+Route::prefix('facebook')->name('facebook.')->group( function(){
+    Route::get('auth', [SocialiteController::class, 'loginUsingFacebook'])->name('login');
+    Route::get('callback', [SocialiteController::class, 'callbackFromFacebook'])->name('callback');
+});
+
+//Google Login URL
+Route::prefix('google')->name('google.')->group( function(){
+    Route::get('redirect',[SocialiteController::class, 'loginUsingGoogle'])->name('login');
+    Route::get('callback', [SocialiteController::class, 'callbackFromGoogle'])->name('callback');
 });

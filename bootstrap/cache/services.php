@@ -33,18 +33,19 @@
     29 => 'Larapack\\VoyagerHooks\\VoyagerHooksServiceProvider',
     30 => 'Laravel\\Dusk\\DuskServiceProvider',
     31 => 'Laravel\\Sail\\SailServiceProvider',
-    32 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    33 => 'Laravel\\Ui\\UiServiceProvider',
-    34 => 'Collective\\Html\\HtmlServiceProvider',
-    35 => 'Carbon\\Laravel\\ServiceProvider',
-    36 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
-    37 => 'TCG\\Voyager\\VoyagerServiceProvider',
-    38 => 'TCG\\Voyager\\Providers\\VoyagerDummyServiceProvider',
-    39 => 'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider',
-    40 => 'App\\Providers\\AppServiceProvider',
-    41 => 'App\\Providers\\AuthServiceProvider',
-    42 => 'App\\Providers\\EventServiceProvider',
-    43 => 'App\\Providers\\RouteServiceProvider',
+    32 => 'Laravel\\Socialite\\SocialiteServiceProvider',
+    33 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    34 => 'Laravel\\Ui\\UiServiceProvider',
+    35 => 'Collective\\Html\\HtmlServiceProvider',
+    36 => 'Carbon\\Laravel\\ServiceProvider',
+    37 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    38 => 'TCG\\Voyager\\VoyagerServiceProvider',
+    39 => 'TCG\\Voyager\\Providers\\VoyagerDummyServiceProvider',
+    40 => 'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider',
+    41 => 'App\\Providers\\AppServiceProvider',
+    42 => 'App\\Providers\\AuthServiceProvider',
+    43 => 'App\\Providers\\EventServiceProvider',
+    44 => 'App\\Providers\\RouteServiceProvider',
   ),
   'eager' => 
   array (
@@ -194,6 +195,7 @@
     'validation.presence' => 'Illuminate\\Validation\\ValidationServiceProvider',
     'Laravel\\Sail\\Console\\InstallCommand' => 'Laravel\\Sail\\SailServiceProvider',
     'Laravel\\Sail\\Console\\PublishCommand' => 'Laravel\\Sail\\SailServiceProvider',
+    'Laravel\\Socialite\\Contracts\\Factory' => 'Laravel\\Socialite\\SocialiteServiceProvider',
     'command.tinker' => 'Laravel\\Tinker\\TinkerServiceProvider',
     'html' => 'Collective\\Html\\HtmlServiceProvider',
     'form' => 'Collective\\Html\\HtmlServiceProvider',
@@ -239,6 +241,9 @@
     array (
     ),
     'Laravel\\Sail\\SailServiceProvider' => 
+    array (
+    ),
+    'Laravel\\Socialite\\SocialiteServiceProvider' => 
     array (
     ),
     'Laravel\\Tinker\\TinkerServiceProvider' => 

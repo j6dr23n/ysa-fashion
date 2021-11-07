@@ -106,7 +106,7 @@
                         @guest
                         <li><a href="/login">Account</a></li>
                         @else
-                            <a href="{{ route('logout')}}" onclick="preventdefault(); document.getElementById('logout-form').submit();" style="font-size:16px;">
+                            <a href="{{ route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" style="font-size:16px;">
                                 Logout
                             </a>
 
