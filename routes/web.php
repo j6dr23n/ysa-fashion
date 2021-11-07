@@ -83,13 +83,6 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/cart/switchToSaveCart/{product}',[CartController::class,'switchToSaveCart'])->name('cart.switchToSaveCart');
 
     Route::delete('/saveCart/{product}',[SaveCartController::class,'destroy'])->name('saveCart.destroy');
-    Route::get('logout', function ()
-    {
-        Auth::logout();
-        Session()->flush();
-
-        return Redirect::to('/');
-    })->name('logout');
     Route::post('/saveCart/switchToCart/{product}',[SaveCartController::class,'switchToCart'])->name('saveCart.switchToCart');
 });
 

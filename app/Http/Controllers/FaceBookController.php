@@ -31,7 +31,7 @@ class FaceBookController extends Controller
            'password' => Hash::make($user->getName().'@'.$user->getId())
             ]);
 
-       Auth::loginUsingId($saveUser->id);
+       Auth::login($saveUser);
 
        return redirect()->route('index.page');
        } catch (\Throwable $th) {
