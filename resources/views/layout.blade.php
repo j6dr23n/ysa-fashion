@@ -8,9 +8,10 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <title>@yield('title', '') | YSA-OnlineShop</title><link rel = "icon" href = "/img/bg/logo.png" type = "image/x-icon">
+    <meta name="keywords" content="ysa fashion">
+    <meta name="description" content="Ysa-Fashion Online Shop">
+    <title>@yield('title', '') | YSA-OnlineShop</title>
+    <link rel="icon" type="image/x-icon" href="/img/bg/logo.png" />
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&amp;amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('plugins/font-awesome/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{ asset('fonts/Linearicons/Linearicons/Font/demo-files/demo.css')}}">
