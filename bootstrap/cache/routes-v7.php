@@ -24,7 +24,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ooHnrNExIAketdne',
+            '_route' => 'generated::HBFE474lLlCj5pnE',
           ),
           1 => NULL,
           2 => 
@@ -44,7 +44,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::EYwRrIWNCGtqCOWz',
+            '_route' => 'generated::a12bxkBR06PT0jn9',
           ),
           1 => NULL,
           2 => 
@@ -224,7 +224,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::9Yhp0QPlp2EH60Fg',
+            '_route' => 'generated::bglOXHWbI8Lchuj5',
           ),
           1 => NULL,
           2 => 
@@ -1288,6 +1288,606 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/admin/category/order' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.category.order',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.category.update_order',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/category/action' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.category.action',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/category/relation' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.category.relation',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/category/remove' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.category.media.remove',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/category' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.category.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.category.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/category/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.category.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/products/order' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.products.order',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.products.update_order',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/products/action' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.products.action',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/products/relation' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.products.relation',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/products/remove' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.products.media.remove',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/products' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.products.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.products.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/products/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.products.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/coupons/order' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.coupons.order',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.coupons.update_order',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/coupons/action' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.coupons.action',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/coupons/relation' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.coupons.relation',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/coupons/remove' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.coupons.media.remove',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/coupons' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.coupons.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.coupons.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/coupons/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.coupons.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/orders/order' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.orders.order',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.orders.update_order',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/orders/action' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.orders.action',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/orders/relation' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.orders.relation',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/orders/remove' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.orders.media.remove',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/orders' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.orders.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.orders.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/orders/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.orders.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/admin/settings' => 
       array (
         0 => 
@@ -1664,7 +2264,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::0MSat3ayjoVW4QdF',
+            '_route' => 'generated::Ko8nYSVSCgYur7iF',
           ),
           1 => NULL,
           2 => 
@@ -1719,7 +2319,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::DIhs17gSYM2DpxDk',
+            '_route' => 'generated::R2EmjL3bmNdMnN4a',
           ),
           1 => NULL,
           2 => 
@@ -1810,7 +2410,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::w1Kmbl2mQAA5JvT6',
+            '_route' => 'generated::m7Ep57SdAnwAY9PO',
           ),
           1 => NULL,
           2 => 
@@ -2056,84 +2656,11 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/_dusk/(?|log(?|in/([^/]++)(?:/([^/]++))?(*:48)|out(?:/([^/]++))?(*:72))|user(?:/([^/]++))?(*:98))|/s(?|hop/([^/]++)(*:123)|aveCart/(?|([^/]++)(*:150)|switchToCart/([^/]++)(*:179)))|/admin/(?|hooks/([^/]++)(?|/(?|enable(*:226)|disable(*:241)|update(*:255))|(*:264))|users/([^/]++)(?|/(?|restore(*:301)|edit(*:313))|(*:322))|menus/([^/]++)(?|/(?|restore(*:359)|edit(*:371)|builder(*:386)|order(*:399)|item(?|/([^/]++)(*:423)|(*:431)))|(*:441))|roles/([^/]++)(?|/(?|restore(*:478)|edit(*:490))|(*:499))|categories/([^/]++)(?|/(?|restore(*:541)|edit(*:553))|(*:562))|p(?|osts/([^/]++)(?|/(?|restore(*:602)|edit(*:614))|(*:623))|ages/([^/]++)(?|/(?|restore(*:659)|edit(*:671))|(*:680)))|settings/([^/]++)(?|(*:710)|/(?|move_(?|up(*:732)|down(*:744))|delete_value(*:765)))|bread/(?|([^/]++)(?|/(?|create(*:805)|edit(*:817))|(*:826))|relationship(*:847)|delete_relationship/([^/]++)(*:883))|database/([^/]++)(?|(*:912)|/edit(*:925)|(*:933)))|/password/reset/([^/]++)(*:967)|/cart/(?|([^/]++)(?|(*:995))|switchToSaveCart/([^/]++)(*:1029)))/?$}sDu',
+      0 => '{^(?|/s(?|hop/([^/]++)(*:24)|aveCart/(?|([^/]++)(*:50)|switchToCart/([^/]++)(*:78)))|/admin/(?|hooks/([^/]++)(?|/(?|enable(*:124)|disable(*:139)|update(*:153))|(*:162))|users/([^/]++)(?|/(?|restore(*:199)|edit(*:211))|(*:220))|menus/([^/]++)(?|/(?|restore(*:257)|edit(*:269)|builder(*:284)|order(*:297)|item(?|/([^/]++)(*:321)|(*:329)))|(*:339))|roles/([^/]++)(?|/(?|restore(*:376)|edit(*:388))|(*:397))|c(?|ategor(?|ies/([^/]++)(?|/(?|restore(*:445)|edit(*:457))|(*:466))|y/([^/]++)(?|/(?|restore(*:499)|edit(*:511))|(*:520)))|oupons/([^/]++)(?|/(?|restore(*:559)|edit(*:571))|(*:580)))|p(?|osts/([^/]++)(?|/(?|restore(*:621)|edit(*:633))|(*:642))|ages/([^/]++)(?|/(?|restore(*:678)|edit(*:690))|(*:699))|roducts/([^/]++)(?|/(?|restore(*:738)|edit(*:750))|(*:759)))|orders/([^/]++)(?|/(?|restore(*:798)|edit(*:810))|(*:819))|settings/([^/]++)(?|(*:848)|/(?|move_(?|up(*:870)|down(*:882))|delete_value(*:903)))|bread/(?|([^/]++)(?|/(?|create(*:943)|edit(*:955))|(*:964))|relationship(*:985)|delete_relationship/([^/]++)(*:1021))|database/([^/]++)(?|(*:1051)|/edit(*:1065)|(*:1074)))|/password/reset/([^/]++)(*:1109)|/cart/(?|([^/]++)(?|(*:1138))|switchToSaveCart/([^/]++)(*:1173)))/?$}sDu',
     ),
     3 => 
     array (
-      48 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'dusk.login',
-            'guard' => NULL,
-          ),
-          1 => 
-          array (
-            0 => 'userId',
-            1 => 'guard',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      72 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'dusk.logout',
-            'guard' => NULL,
-          ),
-          1 => 
-          array (
-            0 => 'guard',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      98 => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'dusk.user',
-            'guard' => NULL,
-          ),
-          1 => 
-          array (
-            0 => 'guard',
-          ),
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => true,
-          6 => NULL,
-        ),
-      ),
-      123 => 
+      24 => 
       array (
         0 => 
         array (
@@ -2156,7 +2683,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      150 => 
+      50 => 
       array (
         0 => 
         array (
@@ -2178,7 +2705,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      179 => 
+      78 => 
       array (
         0 => 
         array (
@@ -2200,7 +2727,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      226 => 
+      124 => 
       array (
         0 => 
         array (
@@ -2223,7 +2750,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      241 => 
+      139 => 
       array (
         0 => 
         array (
@@ -2246,7 +2773,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      255 => 
+      153 => 
       array (
         0 => 
         array (
@@ -2269,7 +2796,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      264 => 
+      162 => 
       array (
         0 => 
         array (
@@ -2291,7 +2818,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      301 => 
+      199 => 
       array (
         0 => 
         array (
@@ -2314,7 +2841,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      313 => 
+      211 => 
       array (
         0 => 
         array (
@@ -2337,7 +2864,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      322 => 
+      220 => 
       array (
         0 => 
         array (
@@ -2399,7 +2926,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      359 => 
+      257 => 
       array (
         0 => 
         array (
@@ -2422,7 +2949,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      371 => 
+      269 => 
       array (
         0 => 
         array (
@@ -2445,7 +2972,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      386 => 
+      284 => 
       array (
         0 => 
         array (
@@ -2468,7 +2995,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      399 => 
+      297 => 
       array (
         0 => 
         array (
@@ -2490,7 +3017,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      423 => 
+      321 => 
       array (
         0 => 
         array (
@@ -2513,7 +3040,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      431 => 
+      329 => 
       array (
         0 => 
         array (
@@ -2554,7 +3081,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      441 => 
+      339 => 
       array (
         0 => 
         array (
@@ -2616,7 +3143,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      478 => 
+      376 => 
       array (
         0 => 
         array (
@@ -2639,7 +3166,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      490 => 
+      388 => 
       array (
         0 => 
         array (
@@ -2662,7 +3189,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      499 => 
+      397 => 
       array (
         0 => 
         array (
@@ -2724,7 +3251,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      541 => 
+      445 => 
       array (
         0 => 
         array (
@@ -2747,7 +3274,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      553 => 
+      457 => 
       array (
         0 => 
         array (
@@ -2770,7 +3297,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      562 => 
+      466 => 
       array (
         0 => 
         array (
@@ -2832,7 +3359,223 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      602 => 
+      499 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.category.restore',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      511 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.category.edit',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      520 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.category.show',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.category.update',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.category.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      559 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.coupons.restore',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      571 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.coupons.edit',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      580 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.coupons.show',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.coupons.update',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.coupons.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      621 => 
       array (
         0 => 
         array (
@@ -2855,7 +3598,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      614 => 
+      633 => 
       array (
         0 => 
         array (
@@ -2878,7 +3621,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      623 => 
+      642 => 
       array (
         0 => 
         array (
@@ -2940,7 +3683,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      659 => 
+      678 => 
       array (
         0 => 
         array (
@@ -2963,7 +3706,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      671 => 
+      690 => 
       array (
         0 => 
         array (
@@ -2986,7 +3729,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      680 => 
+      699 => 
       array (
         0 => 
         array (
@@ -3048,7 +3791,223 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      710 => 
+      738 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.products.restore',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      750 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.products.edit',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      759 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.products.show',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.products.update',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.products.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      798 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.orders.restore',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      810 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.orders.edit',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      819 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.orders.show',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.orders.update',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+            'PATCH' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'voyager.orders.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'DELETE' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      848 => 
       array (
         0 => 
         array (
@@ -3070,7 +4029,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      732 => 
+      870 => 
       array (
         0 => 
         array (
@@ -3093,7 +4052,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      744 => 
+      882 => 
       array (
         0 => 
         array (
@@ -3116,7 +4075,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      765 => 
+      903 => 
       array (
         0 => 
         array (
@@ -3138,7 +4097,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      805 => 
+      943 => 
       array (
         0 => 
         array (
@@ -3161,7 +4120,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      817 => 
+      955 => 
       array (
         0 => 
         array (
@@ -3184,7 +4143,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      826 => 
+      964 => 
       array (
         0 => 
         array (
@@ -3225,7 +4184,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      847 => 
+      985 => 
       array (
         0 => 
         array (
@@ -3246,7 +4205,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      883 => 
+      1021 => 
       array (
         0 => 
         array (
@@ -3269,7 +4228,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      912 => 
+      1051 => 
       array (
         0 => 
         array (
@@ -3292,7 +4251,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      925 => 
+      1065 => 
       array (
         0 => 
         array (
@@ -3315,7 +4274,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      933 => 
+      1074 => 
       array (
         0 => 
         array (
@@ -3357,7 +4316,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      967 => 
+      1109 => 
       array (
         0 => 
         array (
@@ -3380,7 +4339,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      995 => 
+      1138 => 
       array (
         0 => 
         array (
@@ -3421,7 +4380,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1029 => 
+      1173 => 
       array (
         0 => 
         array (
@@ -3458,7 +4417,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::ooHnrNExIAketdne' => 
+    'generated::HBFE474lLlCj5pnE' => 
     array (
       'methods' => 
       array (
@@ -3479,7 +4438,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::ooHnrNExIAketdne',
+        'as' => 'generated::HBFE474lLlCj5pnE',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3494,106 +4453,7 @@ app('router')->setCompiledRoutes(
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
     ),
-    'dusk.login' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => '_dusk/login/{userId}/{guard?}',
-      'action' => 
-      array (
-        'middleware' => 'web',
-        'uses' => 'Laravel\\Dusk\\Http\\Controllers\\UserController@login',
-        'as' => 'dusk.login',
-        'controller' => 'Laravel\\Dusk\\Http\\Controllers\\UserController@login',
-        'namespace' => NULL,
-        'prefix' => '_dusk',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-    ),
-    'dusk.logout' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => '_dusk/logout/{guard?}',
-      'action' => 
-      array (
-        'middleware' => 'web',
-        'uses' => 'Laravel\\Dusk\\Http\\Controllers\\UserController@logout',
-        'as' => 'dusk.logout',
-        'controller' => 'Laravel\\Dusk\\Http\\Controllers\\UserController@logout',
-        'namespace' => NULL,
-        'prefix' => '_dusk',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-    ),
-    'dusk.user' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'GET',
-        1 => 'HEAD',
-      ),
-      'uri' => '_dusk/user/{guard?}',
-      'action' => 
-      array (
-        'middleware' => 'web',
-        'uses' => 'Laravel\\Dusk\\Http\\Controllers\\UserController@user',
-        'as' => 'dusk.user',
-        'controller' => 'Laravel\\Dusk\\Http\\Controllers\\UserController@user',
-        'namespace' => NULL,
-        'prefix' => '_dusk',
-        'where' => 
-        array (
-        ),
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-    ),
-    'generated::EYwRrIWNCGtqCOWz' => 
+    'generated::a12bxkBR06PT0jn9' => 
     array (
       'methods' => 
       array (
@@ -3608,15 +4468,15 @@ app('router')->setCompiledRoutes(
           0 => 'api',
           1 => 'auth:api',
         ),
-        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":289:{@pM8AFYSFnXKRRio1WbLL1teQSOpOsq0TOpIwXhatfDY=.a:5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
+        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":289:{@okdLKrYWLPAy9VysM2ZTwHAdDU5BUH+9dzWxtJQhSOw=.a:5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000152fca550000000074173e56";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000003d793adf0000000017deeb96";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::EYwRrIWNCGtqCOWz',
+        'as' => 'generated::a12bxkBR06PT0jn9',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3955,7 +4815,7 @@ app('router')->setCompiledRoutes(
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
     ),
-    'generated::9Yhp0QPlp2EH60Fg' => 
+    'generated::bglOXHWbI8Lchuj5' => 
     array (
       'methods' => 
       array (
@@ -3969,15 +4829,15 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":302:{@A1gvZcAtWYguHed/452Gfxus/WTWdim1DUatObD5Eyw=.a:5:{s:3:"use";a:0:{}s:8:"function";s:90:"function (){
+        'uses' => 'C:32:"Opis\\Closure\\SerializableClosure":302:{@+UTgVYUEw6vb/W1+tYQqqHC5BBygpFmSlAsGQhdKSL0=.a:5:{s:3:"use";a:0:{}s:8:"function";s:90:"function (){
     \\Gloudemans\\Shoppingcart\\Facades\\Cart::instance(\'saveCart\')->destroy();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000152fca600000000074173e56";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000003d793ad40000000017deeb96";}}',
         'namespace' => NULL,
         'prefix' => NULL,
         'where' => 
         array (
         ),
-        'as' => 'generated::9Yhp0QPlp2EH60Fg',
+        'as' => 'generated::bglOXHWbI8Lchuj5',
       ),
       'fallback' => false,
       'defaults' => 
@@ -7285,6 +8145,1910 @@ app('router')->setCompiledRoutes(
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
     ),
+    'voyager.category.order' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/category/order',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@order',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@order',
+        'as' => 'voyager.category.order',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.category.action' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/category/action',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@action',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@action',
+        'as' => 'voyager.category.action',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.category.update_order' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/category/order',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@update_order',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@update_order',
+        'as' => 'voyager.category.update_order',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.category.restore' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/category/{id}/restore',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@restore',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@restore',
+        'as' => 'voyager.category.restore',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.category.relation' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/category/relation',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@relation',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@relation',
+        'as' => 'voyager.category.relation',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.category.media.remove' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/category/remove',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@remove_media',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@remove_media',
+        'as' => 'voyager.category.media.remove',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.category.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/category',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.category.index',
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@index',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@index',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.category.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/category/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.category.create',
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@create',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@create',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.category.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/category',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.category.store',
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@store',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@store',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.category.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/category/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.category.show',
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@show',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@show',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.category.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/category/{id}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.category.edit',
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@edit',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@edit',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.category.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'admin/category/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.category.update',
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@update',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@update',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.category.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'admin/category/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.category.destroy',
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@destroy',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@destroy',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.products.order' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/products/order',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@order',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@order',
+        'as' => 'voyager.products.order',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.products.action' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/products/action',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@action',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@action',
+        'as' => 'voyager.products.action',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.products.update_order' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/products/order',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@update_order',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@update_order',
+        'as' => 'voyager.products.update_order',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.products.restore' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/products/{id}/restore',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@restore',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@restore',
+        'as' => 'voyager.products.restore',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.products.relation' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/products/relation',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@relation',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@relation',
+        'as' => 'voyager.products.relation',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.products.media.remove' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/products/remove',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@remove_media',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@remove_media',
+        'as' => 'voyager.products.media.remove',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.products.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/products',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.products.index',
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@index',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@index',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.products.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/products/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.products.create',
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@create',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@create',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.products.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/products',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.products.store',
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@store',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@store',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.products.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/products/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.products.show',
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@show',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@show',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.products.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/products/{id}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.products.edit',
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@edit',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@edit',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.products.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'admin/products/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.products.update',
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@update',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@update',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.products.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'admin/products/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.products.destroy',
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@destroy',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\ProductsController@destroy',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.coupons.order' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/coupons/order',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@order',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@order',
+        'as' => 'voyager.coupons.order',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.coupons.action' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/coupons/action',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@action',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@action',
+        'as' => 'voyager.coupons.action',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.coupons.update_order' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/coupons/order',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@update_order',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@update_order',
+        'as' => 'voyager.coupons.update_order',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.coupons.restore' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/coupons/{id}/restore',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@restore',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@restore',
+        'as' => 'voyager.coupons.restore',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.coupons.relation' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/coupons/relation',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@relation',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@relation',
+        'as' => 'voyager.coupons.relation',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.coupons.media.remove' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/coupons/remove',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@remove_media',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@remove_media',
+        'as' => 'voyager.coupons.media.remove',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.coupons.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/coupons',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.coupons.index',
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@index',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@index',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.coupons.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/coupons/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.coupons.create',
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@create',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@create',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.coupons.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/coupons',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.coupons.store',
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@store',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@store',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.coupons.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/coupons/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.coupons.show',
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@show',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@show',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.coupons.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/coupons/{id}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.coupons.edit',
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@edit',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@edit',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.coupons.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'admin/coupons/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.coupons.update',
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@update',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@update',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.coupons.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'admin/coupons/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.coupons.destroy',
+        'uses' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@destroy',
+        'controller' => '\\TCG\\Voyager\\Http\\Controllers\\VoyagerBaseController@destroy',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.orders.order' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/orders/order',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@order',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@order',
+        'as' => 'voyager.orders.order',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.orders.action' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/orders/action',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@action',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@action',
+        'as' => 'voyager.orders.action',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.orders.update_order' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/orders/order',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@update_order',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@update_order',
+        'as' => 'voyager.orders.update_order',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.orders.restore' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/orders/{id}/restore',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@restore',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@restore',
+        'as' => 'voyager.orders.restore',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.orders.relation' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/orders/relation',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@relation',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@relation',
+        'as' => 'voyager.orders.relation',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.orders.media.remove' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/orders/remove',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@remove_media',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@remove_media',
+        'as' => 'voyager.orders.media.remove',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.orders.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/orders',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.orders.index',
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@index',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@index',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.orders.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/orders/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.orders.create',
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@create',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@create',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.orders.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/orders',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.orders.store',
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@store',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@store',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.orders.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/orders/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.orders.show',
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@show',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@show',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.orders.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/orders/{id}/edit',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.orders.edit',
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@edit',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@edit',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.orders.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+        1 => 'PATCH',
+      ),
+      'uri' => 'admin/orders/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.orders.update',
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@update',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@update',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
+    'voyager.orders.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'DELETE',
+      ),
+      'uri' => 'admin/orders/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin.user',
+        ),
+        'as' => 'voyager.orders.destroy',
+        'uses' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@destroy',
+        'controller' => '\\App\\Http\\Controllers\\Voyager\\OrdersController@destroy',
+        'namespace' => NULL,
+        'prefix' => '/admin',
+        'where' => 
+        array (
+        ),
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+    ),
     'voyager.menus.builder' => 
     array (
       'methods' => 
@@ -8704,7 +11468,7 @@ app('router')->setCompiledRoutes(
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
     ),
-    'generated::0MSat3ayjoVW4QdF' => 
+    'generated::Ko8nYSVSCgYur7iF' => 
     array (
       'methods' => 
       array (
@@ -8724,7 +11488,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::0MSat3ayjoVW4QdF',
+        'as' => 'generated::Ko8nYSVSCgYur7iF',
       ),
       'fallback' => false,
       'defaults' => 
@@ -8810,7 +11574,7 @@ app('router')->setCompiledRoutes(
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
     ),
-    'generated::DIhs17gSYM2DpxDk' => 
+    'generated::R2EmjL3bmNdMnN4a' => 
     array (
       'methods' => 
       array (
@@ -8830,7 +11594,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::DIhs17gSYM2DpxDk',
+        'as' => 'generated::R2EmjL3bmNdMnN4a',
       ),
       'fallback' => false,
       'defaults' => 
@@ -9023,7 +11787,7 @@ app('router')->setCompiledRoutes(
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
     ),
-    'generated::w1Kmbl2mQAA5JvT6' => 
+    'generated::m7Ep57SdAnwAY9PO' => 
     array (
       'methods' => 
       array (
@@ -9043,7 +11807,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::w1Kmbl2mQAA5JvT6',
+        'as' => 'generated::m7Ep57SdAnwAY9PO',
       ),
       'fallback' => false,
       'defaults' => 

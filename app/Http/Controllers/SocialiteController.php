@@ -52,7 +52,6 @@ class SocialiteController extends Controller
    {
       try {
          $user = Socialite::driver('google')->user();
-         dd($user);
   
          $saveUser = User::updateOrCreate([
              'google_id' => $user->getId(),
