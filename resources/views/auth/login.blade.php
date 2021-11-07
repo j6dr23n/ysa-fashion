@@ -49,11 +49,11 @@
                                         </div>
                                         <div class="form-group submtit">
                                             <button class="ps-btn ps-btn--fullwidth" type="submit">Login</button>
-                                            @if (Route::has('password.request'))
+                                            {{-- @if (Route::has('password.request'))
                                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                                     {{ __('Forgot Your Password?') }}
                                                 </a>
-                                            @endif
+                                            @endif --}}
                                         </div>
                                     </form>
                                 </div>
@@ -62,8 +62,6 @@
                                 <ul class="ps-list--social">
                                     <li><a class="facebook" href="{{ route('facebook.login') }}"><i class="fa fa-facebook"></i></a></li>
                                     <li><a class="google" href="{{ route('google.login') }}"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -100,7 +98,7 @@
                                         @enderror
                                     </div>
                                     <div class="form-group">
-                                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeholder="Password Confirm" autocomplete="new-password">
+                                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeholder="Confirm Password" autocomplete="new-password">
                                     </div>
                                     <div class="form-group submtit">
                                         <button class="ps-btn ps-btn--fullwidth" type="submit">Register</button>
