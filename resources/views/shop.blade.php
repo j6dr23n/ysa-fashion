@@ -10,8 +10,8 @@
     <div class="ps-breadcrumb">
         <div class="ps-container">
             <ul class="breadcrumb">
-                <li><a href="{{ route('index.page') }}">ပင်မ</a></li>
-                <li>{{ request()->category != null ? $categoryName : 'စျေးဝယ်ရန်' }}</li>
+                <li><a href="{{ route('index.page') }}">Home</a></li>
+                <li>{{ request()->category != null ? $categoryName : 'Shop' }}</li>
             </ul>
         </div>
     </div>
@@ -34,9 +34,9 @@
                         </ul>
                     </aside>
                     <aside class="widget widget_shop">
-                        <h4 class="widget-title">ပစ္စည်းများရှာရန်</h4>
+                        <h4 class="widget-title">Search</h4>
                         <form class="ps-form--widget-search" action="{{ route('shop.search') }}" method="GET">
-                            <input class="form-control" type="text" placeholder="ပစ္စည်းများရှာရန်" name="query" value="{{ request()->input('query') }}" id="query">
+                            <input class="form-control" type="text" placeholder="Search" name="query" value="{{ request()->input('query') }}" id="query">
                             <button><i class="icon-magnifier"></i></button>
                         </form>
                         {{-- <figure>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="ps-layout__right">
                     <div class="ps-page__header">
-                        <h1>{{ request()->category != null ? $categoryName : 'စျေးဝယ်ရန်' }}</h1>
+                        <h1>{{ request()->category != null ? $categoryName : 'Shop' }}</h1>
                         <div class="ps-carousel--nav-inside owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="5000" data-owl-gap="0" data-owl-nav="true" data-owl-dots="true" data-owl-item="1" data-owl-item-xs="1" data-owl-item-sm="1" data-owl-item-md="1" data-owl-item-lg="1" data-owl-duration="1000" data-owl-mousedrag="on">
                         @if ($promotion)
                             @foreach ($promotion as $item)
@@ -59,14 +59,15 @@
                     </div>
                     <div class="ps-block--shop-features">
                         <div class="ps-block__header">
-                            <h3>Best Sale Items</h3>
+                            <h3>Best Sale Bags</h3>
                             <div class="ps-block__navigation"><a class="ps-carousel__prev" href="#bestsale"><i class="icon-chevron-left"></i></a><a class="ps-carousel__next" href="#bestsale"><i class="icon-chevron-right"></i></a></div>
                         </div>
                         <div class="ps-block__content">
                             <div class="owl-slider" id="bestsale" data-owl-auto="true" data-owl-loop="true" data-owl-speed="10000" data-owl-gap="30" data-owl-nav="false" data-owl-dots="false" data-owl-item="4" data-owl-item-xs="2" data-owl-item-sm="2" data-owl-item-md="2" data-owl-item-lg="3" data-owl-item-xl="4" data-owl-duration="1000" data-owl-mousedrag="on">
                                 @foreach ($bestsaleproducts as $product)
                                 <div class="ps-product">
-                                    <div class="ps-product__thumbnail"><a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt=""></a>
+                                    <div class="ps-product__thumbnail">
+                                        <a href="{{ route('shop.show', $product->slug) }}"><img src="{{ productImage($product->image) }}" alt=""></a>
                                         @if ($product->quantity == 0)
                                             <div class="ps-product__badge out-stock" style="{{ $product->quantity == 0 ? 'display:initial': 'display:none' }}">Out Of Stock</div>
                                         @endif
@@ -77,14 +78,14 @@
                                         <div class="ps-product__badge hot" style="{{ $product->quantity <= 2 & $product->discountPercent == null & $product->quantity != 0 ? 'display:initial': 'display:none' }}">hot</div>
                                         @endif
                                         <ul class="ps-product__actions">
-                                            <li><a href="{{ route('shop.show', $product->slug) }}" data-toggle="tooltip" data-placement="top" title="ကြည့်ရန်"><i class="icon-bag2"></i></a></li>
-                                            <li><a href="{{ route('shop.show', $product->slug) }}" data-placement="top" title="အမြန်ကြည့်ရန်" data-toggle="modal" data-target="#product-quickview"><i class="icon-eye"></i></a></li>
+                                            <li><a href="{{ route('shop.show', $product->slug) }}" data-toggle="tooltip" data-placement="top" title="Watch"><i class="icon-bag2"></i></a></li>
+                                            <li><a href="{{ route('shop.show', $product->slug) }}" data-placement="top" title="Look Up" data-toggle="modal" data-target="#product-quickview"><i class="icon-eye"></i></a></li>
                                             <form action="{{ route('cart.store') }}" method="POST">
                                             @csrf
                                                 <input type="hidden" name="id" value="{{ $product->id }}">
                                                 <input type="hidden" name="name" value="{{ $product->name }}">
                                                 <input type="hidden" name="price" value="{{ $product->price * (1 - $product->discountPercent / 100) }}">
-                                                <li><button href="" data-toggle="tooltip" data-placement="top" title="ခြင်းထဲထည့်ရန်"><i class="icon-heart"></i></button></li>	
+                                                <li><button href="" data-toggle="tooltip" data-placement="top" title="Add to cart"><i class="icon-heart"></i></button></li>	
                                             </form>
                                         </ul>
                                     </div>
@@ -138,14 +139,14 @@
                                                                <div class="ps-product__badge hot" style="{{ $product->quantity <= 2 & $product->discountPercent == null & $product->quantity != 0 ? 'display:initial': 'display:none' }}">hot</div>
                                                             @endif
                                                             <ul class="ps-product__actions">
-                                                                <li><a href="{{ route('shop.show', $product->slug) }}" data-toggle="tooltip" data-placement="top" title="ကြည့်ရန်"><i class="icon-bag2"></i></a></li>
-                                                                <li><a href="{{ route('shop.show', $product->slug) }}" data-placement="top" title="အမြန်ကြည့်ရန်" data-toggle="modal" data-target="#product-quickview"><i class="icon-eye"></i></a></li>
+                                                                <li><a href="{{ route('shop.show', $product->slug) }}" data-toggle="tooltip" data-placement="top" title="Watch"><i class="icon-bag2"></i></a></li>
+                                                                <li><a href="{{ route('shop.show', $product->slug) }}" data-placement="top" title="Look Up" data-toggle="modal" data-target="#product-quickview"><i class="icon-eye"></i></a></li>
                                                                 <form action="{{ route('cart.store') }}" method="POST">
                                                                 @csrf
                                                                     <input type="hidden" name="id" value="{{ $product->id }}">
                                                                     <input type="hidden" name="name" value="{{ $product->name }}">
                                                                     <input type="hidden" name="price" value="{{ $product->price * (1 - $product->discountPercent / 100) }}">
-                                                                    <li><button href="" data-toggle="tooltip" data-placement="top" title="ခြင်းထဲထည့်ရန်"><i class="icon-heart"></i></button></li>	
+                                                                    <li><button href="" data-toggle="tooltip" data-placement="top" title="Add to cart"><i class="icon-heart"></i></button></li>	
                                                                 </form>
                                                             </ul>
                                                         </div>
