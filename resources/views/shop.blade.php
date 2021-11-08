@@ -16,7 +16,7 @@
         </div>
     </div>
     <div class="ps-page--shop" id="shop-sidebar">
-        <div class="container">
+        <div class="container-fluid">
             <div class="ps-layout--shop">
                 <div class="ps-layout__left">
                     <aside class="widget widget_shop">
@@ -171,8 +171,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 @endsection
 
 @section('extra-js')
