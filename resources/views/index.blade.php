@@ -86,7 +86,7 @@
         @endif
         <div class="ps-top-categories">
             <div class="ps-container">
-                <h3>ယခုလရောင်းအားအကောင်းဆုံးအမျိုးအစားများ</h3>
+                <h3>Categories</h3>
                 <div class="row">
                     @foreach($categories as $category)
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-6 ">
@@ -270,7 +270,7 @@
         <div class="ps-product-list ps-new-arrivals">
             <div class="ps-container">
                 <div class="ps-section__header">
-                    <h3>အသစ်ဝင်ပစ္စည်းများ</h3>
+                    <h3>Latest Bags</h3>
                     <ul class="ps-section__links">
                         <li><a href="{{ route('shop.index') }}">View All</a></li>
                     </ul>

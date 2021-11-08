@@ -25,8 +25,8 @@
                 <aside class="widget widget_footer">
                     <h4 class="widget-title">Bussiness</h4>
                     <ul class="ps-list--link">
-                        <li><a href="{{ route('cart.index') }}">ဈေးခြင်း</a></li>
-                        <li><a href="{{ route('shop.index') }}">စျေးဝယ်ရန်</a></li>
+                        <li><a href="{{ route('cart.index') }}">Cart</a></li>
+                        <li><a href="{{ route('shop.index') }}">Shop</a></li>
                     </ul>
                 </aside>
             </div>

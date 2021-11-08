@@ -3,7 +3,7 @@
             <div class="ps-container">
                 <div class="header__left">
                     <div class="menu--product-categories">
-                        <div class="menu__toggle"><i class="icon-menu"></i><span>အမျိုးအစားများ</span></div>
+                        <div class="menu__toggle"><i class="icon-menu"></i><span>Categories</span></div>
                         <div class="menu__content">
                             <ul class="menu--dropdown">
                                 @foreach (App\Models\Category::with('childs')->where('p_id',0)->get() as $item)
@@ -26,7 +26,7 @@
                 </div>
                 <div class="header__center">
                     <form class="ps-form--quick-search" action="{{ route('shop.search') }}" method="GET">
-                        <input class="form-control" type="text" placeholder="ပစ္စည်းများရှာရန်" name="query" value="{{ request()->input('query') }}" id="input-search query">
+                        <input class="form-control" type="text" placeholder="Search..." name="query" value="{{ request()->input('query') }}" id="input-search query">
                         <button>Search</button>
                     </form>
                 </div>
@@ -54,9 +54,9 @@
                                 <div class="ps-cart__footer">
                                     @if(Cart::instance('default')->count() > 0)
                                     <h3>Sub Total:<strong>{{ presentPrice(Cart::instance('default')->subtotal()) }}</strong></h3>
-                                    <figure><a href="#"></a><a class="ps-btn" href="{{ route('cart.index') }}">ဈေးခြင်းသို့</a></figure>
+                                    <figure><a href="#"></a><a class="ps-btn" href="{{ route('cart.index') }}">Go to Cart</a></figure>
                                     @else
-                                        <h3 style="text-align:center;color:red;font-weight:bold;margin:30px;">ဈေးခြင်းတွင်ပစ္စည်းမရှိပါ။</h3>
+                                        <h3 style="text-align:center;color:red;font-weight:bold;margin:30px;">Nothing in Cart</h3>
                                     @endif
                                 </div>
                             </div>
@@ -72,7 +72,7 @@
             <div class="ps-container">
                 <div class="navigation__left">
                     <div class="menu--product-categories">
-                        <div class="menu__toggle"><i class="icon-menu"></i><span>အမျိုးအစားများ</span></div>
+                        <div class="menu__toggle"><i class="icon-menu"></i><span>Categories</span></div>
                         <div class="menu__content">
                             <ul class="menu--dropdown">
                                 @foreach (App\Models\Category::with('childs')->where('p_id',0)->get() as $item)
@@ -100,9 +100,9 @@
                         <li class="menu-item-has-children has-mega-menu"></li>
                     </ul>
                     <ul class="navigation__extra">
-                        <li><a href="{{ route('index.page') }}">ပင်မ</a></li>
-                        <li><a href="{{ route('shop.index') }}">စျေးဝယ်ရန်</a></li>
-                        <li><a href="{{ route('pages.contactUs') }}">ဆက်သွယ်ရန်</a></li>
+                        <li><a href="{{ route('index.page') }}">Home</a></li>
+                        <li><a href="{{ route('shop.index') }}">Shop</a></li>
+                        <li><a href="{{ route('pages.contactUs') }}">Contact</a></li>
                         @guest
                         <li><a href="/login">Account</a></li>
                         @else
@@ -146,9 +146,9 @@
                             <div class="ps-cart__footer">
                                 @if(Cart::instance('default')->count() > 0)
                                 <h3>Sub Total:<strong>{{ presentPrice(Cart::subtotal()) }}</strong></h3>
-                                <figure><a href="#"></a><a class="ps-btn" href="{{ route('cart.index') }}">ဈေးခြင်းသို့</a></figure>
+                                <figure><a href="#"></a><a class="ps-btn" href="{{ route('cart.index') }}">Add to Cart</a></figure>
                                 @else
-                                    <h3 style="text-align:center;color:red;font-weight:bold;">ဈေးခြင်းတွင်ပစ္စည်းမရှိပါ။</h3>
+                                    <h3 style="text-align:center;color:red;font-weight:bold;">Nothing In Cart</h3>
                                 @endif
                             </div>         
                         </div>
@@ -163,7 +163,7 @@
         <div class="ps-search--mobile">
             <form class="ps-form--search-mobile" action="{{ route('shop.search') }}" method="GET">
                 <div class="form-group--nest">
-                    <input class="form-control" type="text" placeholder="ပစ္စည်းများရှာရန်" name="query" value="{{ request()->input('query') }}" id="query">
+                    <input class="form-control" type="text" placeholder="Seacrh..." name="query" value="{{ request()->input('query') }}" id="query">
                     <button type="submit"><i class="icon-magnifier"></i></button>
                 </div>
             </form>
