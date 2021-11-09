@@ -30,13 +30,16 @@
                                 </div>
                                 <div class="ps-widget__content">
                                     <ul class="ps-tab-list">
-                                        <li class="active"><a href="#profile"><i class="icon-user"></i> အကောင့်</a></li>
-                                        <li><a href="#invoices"><i class="icon-papers"></i> အော်ဒါများ</a></li>
-                                        <li><a href="#whishlist"><i class="icon-heart"></i> ရွှေးချယ်ပစ္စည်း</a></li>
+                                        <li class="active"><a href="#profile"><i class="icon-user"></i> Account</a></li>
+                                        <li><a href="#invoices"><i class="icon-papers"></i> Orders</a></li>
+                                        {{-- <li><a href="#whishlist"><i class="icon-heart"></i> ရွှေးချယ်ပစ္စည်း</a></li> --}}
                                         <li>
-                                            <form action="{{ route('logout') }}" method="POST">
-                                            @csrf
-                                                <a type="submit"><button class="cross-button" style="font-weight:bold;margin-right:10px;"><i class="icon-power-switch"></i> ထွက်ရန်</button></a>
+                                            <a href="{{ route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" style="font-size:16px;">
+                                                <i class="icon-power-switch"></i> Logout
+                                            </a>
+                
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display:none;">
+                                                {{ csrf_field() }}
                                             </form>
                                         </li>
                                     </ul>
@@ -205,17 +208,17 @@
                             <br>
                             <div class="ps-section--account-setting">
                                 <div class="ps-section__header">
-                                    <h3>အော်ဒါများ</h3>
+                                    <h3>Orders</h3>
                                 </div>
                                 <div class="ps-section__content">
                                     <div class="table-responsive">
                                         <table class="table ps-table ps-table--invoices">
                                             <thead>
                                                 <tr>
-                                                    <th>အော်ဒါအမှတ်</th>
-                                                    <th>ပစ္စည်းအမည်</th>
-                                                    <th>ရက်စွဲ</th>
-                                                    <th>စုစုပေါင်း</th>
+                                                    <th>Order No.</th>
+                                                    <th>Name</th>
+                                                    <th>Date</th>
+                                                    <th>Totals</th>
                                                     <th>Status</th>
                                                 </tr>
                                             </thead>
@@ -239,7 +242,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ps-section__right ps-tab" id="whishlist">
+                        {{-- <div class="ps-section__right ps-tab" id="whishlist">
                             <br>
                             @if(Cart::instance('saveCart')->count() > 0)
                             <div class="ps-section__content">
@@ -292,7 +295,7 @@
                                     </table>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

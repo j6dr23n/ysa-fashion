@@ -35,9 +35,9 @@
                         </ul>
                     </aside>
                     <aside class="widget widget_shop">
-                        <h4 class="widget-title">ပစ္စည်းများရှာရန်</h4>
+                        <h4 class="widget-title">Search</h4>
                         <form class="ps-form--widget-search" action="{{ route('shop.search') }}" method="GET">
-                            <input class="form-control" type="text" placeholder="ပစ္စည်းများရှာရန်" name="query" value="{{ request()->input('query') }}" id="query">
+                            <input class="form-control" type="text" placeholder="Search" name="query" value="{{ request()->input('query') }}" id="query">
                             <button><i class="icon-magnifier"></i></button>
                         </form>
                         {{-- <figure>
