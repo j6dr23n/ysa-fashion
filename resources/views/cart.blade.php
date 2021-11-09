@@ -11,16 +11,16 @@
         <div class="ps-breadcrumb">
             <div class="container">
                 <ul class="breadcrumb">
-                    <li><a href="{{ route('index.page') }}">ပင်မ</a></li>
-                    <li><a href="{{ route('shop.index') }}">စျေးဝယ်ရန်</a></li>
-                    <li>ဈေးခြင်း</li>
+                    <li><a href="{{ route('index.page') }}">Home</a></li>
+                    <li><a href="{{ route('shop.index') }}">Shop</a></li>
+                    <li>Cart</li>
                 </ul>
             </div>
         </div>
         <div class="ps-section--shopping ps-shopping-cart">
             <div class="container">
                 <div class="ps-section__header">
-                    <h1>ဈေးခြင်း({{ Cart::count() }})</h1>
+                    <h1>Cart({{ Cart::count() }})</h1>
                     <br>
                     @if (session()->has('success_message'))
                         <div class="alert alert-success">
@@ -44,12 +44,12 @@
                         <table class="table ps-table--shopping-cart">
                             <thead>
                                 <tr>
-                                    <th>ဓာတ်ပုံပစ္စည်းအမည်</th>
-                                    <th>စျေးနှုန်း</th>
-                                    <th>အရေအတွက်</th>
+                                    <th>Image</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
                                     {{-- <th>ရွှေးချယ်ထားရန်</th> --}}
-                                    <th>အရောင်</th>
-                                    <th>စုစုပေါင်း</th>
+                                    <th>Color</th>
+                                    <th>Totals</th>
                                     <th><i class="icon-cross"></i></th>
                                 </tr>
                             </thead>
@@ -88,7 +88,7 @@
                                     </tr>
                                 @endforeach
                                 @else				
-                                    <h3 style="text-align:center;color:red;font-weight:bold;border:4px double black;padding:20px;">ဈေးခြင်းတွင်ပစ္စည်းမရှိပါ။</h3>
+                                    <h3 style="text-align:center;color:red;font-weight:bold;border:4px double black;padding:20px;">Nothing in cart.</h3>
                                 @endif
                             </tbody>
                         </table>
@@ -117,7 +117,7 @@
                                     <figure>
                                         <figcaption>Coupon Discount</figcaption>
                                         <div class="form-group">
-                                            <input class="form-control" type="text" placeholder="ကူပွန်ကုဒ်ရိုက်ထည့်ရန်နေရာ" name="coupon_code">
+                                            <input class="form-control" type="text" placeholder="Enter Coupon Here!!!" name="coupon_code">
                                         </div>
                                         <div class="form-group">
                                             <button class="ps-btn ps-btn--outline">Apply</button>
@@ -145,10 +145,10 @@
                                 </div>
                                 @endif
                                 <div class="ps-block__header" style="padding-top:10px;">
-                                    <p>အရေအတွက်စုစုပေါင်း <span>{{ Cart::count() > 0 ? Cart::count() : 0 }}</span></p>
+                                    <p>Total Quantity <span>{{ Cart::count() > 0 ? Cart::count() : 0 }}</span></p>
                                 </div>
                                 <div class="ps-block__content">
-                                    <h3>စုစုပေါင်း  <span>{{ presentPrice($newTotal) }}</span></h3>
+                                    <h3>Totals  <span>{{ presentPrice($newTotal) }}</span></h3>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +171,7 @@
                                         <textarea class="form-control" name="order_notes" rows="7" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
                                     </div>
                                 </div>
-                                <button class="ps-btn ps-btn--fullwidth" type="submit" >အော်ဒါတင်ရန်</button>
+                                <button class="ps-btn ps-btn--fullwidth" type="submit" >Order</button>
                             </form>
                         </div>
                     </div>

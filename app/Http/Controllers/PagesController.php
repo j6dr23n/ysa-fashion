@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\BasicUser;
+use App\Models\User;
 use App\Models\Product;
 
 class PagesController extends Controller
@@ -15,9 +15,11 @@ class PagesController extends Controller
 
     public function aboutUs()
     {
+        $users = User::get();
         $products = Product::all();
         return view('pages.about-us')->with([
-            'products' => $products
+            'products' => $products,
+            'users' => $users
         ]);
     }
 

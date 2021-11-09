@@ -15,14 +15,19 @@
             </ul>
         </div>
     </div>
-    <div class="ps-page--single" id="about-us"><img src="img/bg/about-us.jpg" alt="">
+    <div class="ps-page--single" id="about-us">
+        <br><img src="img/bg/cover.png" alt="" style="
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;">
         <div class="ps-about-intro">
-            <div class="container">
-                <div class="ps-section__header">
-                    <h4>Welcome to Zay Min Htet Co.,Ltd</h4>
-                    <h3>4 months installment Online Shopping</h3>
-                    <p>For only authorzied members</p>
-                </div>
+            <div class="container-fluid">
+                {{-- <div class="ps-section__header">
+                    <h4>Welcome to Ysa Fashion</h4>
+                    <h3>Online Shopping</h3>
+                    <p>Cash On Delivery</p>
+                </div> --}}
                 <div class="ps-section__content">
                     <div class="row">
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6 ">
@@ -34,19 +39,19 @@
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6 ">
                             <div class="ps-block--icon-box"><i class="icon-store"></i>
                                 <h4>{{ $users->count() }}</h4>
-                                <p>Members on Zay Min Htet Co.,Ltd</p>
+                                <p>Members on Ysa Fashion</p>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6 ">
                             <div class="ps-block--icon-box"><i class="icon-bag2"></i>
                                 <h4>{{ $users->count() }}</h4>
-                                <p>Buyer active on Zay Min Htet Co.,Ltd</p>
+                                <p>Buyer active on Ysa Fashion</p>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6 ">
-                            <div class="ps-block--icon-box"><i class="icon-cash-dollar"></i>
-                                <h4>$2.46M</h4>
-                                <p>Annual gross merchandise sales</p>
+                            <div class="ps-block--icon-box"><i class="icon-telephone"></i>
+                                <h4>+9595094762</h4>
+                                <p>Buyer active on Ysa Fashion</p>
                             </div>
                         </div>
                     </div>
@@ -54,7 +59,7 @@
             </div>
         </div>
         <!--include ../../partials/pages/about-us/milestone-->
-        <div class="ps-our-team">
+        {{-- <div class="ps-our-team">
             <div class="container">
                 <div class="ps-section__header">
                     <h3>Meet Our Leaders</h3>
@@ -156,7 +161,7 @@
                     </figure>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 @endsection
 
