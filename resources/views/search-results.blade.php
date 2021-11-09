@@ -10,8 +10,8 @@
     <div class="ps-breadcrumb">
         <div class="ps-container">
             <ul class="breadcrumb">
-                <li><a href="{{ route('index.page') }}">ပင်မ</a></li>
-                <li>စျေးဝယ်ရန်</li>
+                <li><a href="{{ route('index.page') }}">Home</a></li>
+                <li>Shop</li>
                 <li>{{ request()->input('query') }}</li>
             </ul>
         </div>

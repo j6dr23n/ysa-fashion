@@ -11,8 +11,8 @@
         <div class="ps-breadcrumb">
             <div class="container">
                 <ul class="breadcrumb">
-                    <li><a href="{{ route('index.page') }}">ပင်မ</a></li>
-                    <li>အကောင့်</li>
+                    <li><a href="{{ route('index.page') }}">Home</a></li>
+                    <li>Account</li>
                 </ul>
             </div>
         </div>

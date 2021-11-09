@@ -11,9 +11,9 @@
         <div class="ps-breadcrumb">
             <div class="container">
                 <ul class="breadcrumb">
-                    <li><a href="{{ route('index.page') }}">ပင်မ</a></li>
-                    <li><a href="{{ route('shop.index') }}">စျေးဝယ်ရန်</a></li>
-                    <li>ရွှေးချယ်ပစ္စည်း</li>
+                    <li><a href="{{ route('index.page') }}">Home</a></li>
+                    <li><a href="{{ route('shop.index') }}">Shop</a></li>
+                    <li>SaveCart</li>
                 </ul>
             </div>
         </div>
