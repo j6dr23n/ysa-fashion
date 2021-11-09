@@ -19,8 +19,8 @@
     <div class="ps-breadcrumb">
         <div class="ps-container">
             <ul class="breadcrumb">
-                <li><a href="{{ route('index.page') }}">ပင်မ</a></li>
-                <li><a href="{{ route('shop.index') }}">စျေးဝယ်ရန်</a></li>
+                <li><a href="{{ route('index.page') }}">Home</a></li>
+                <li><a href="{{ route('shop.index') }}">Shop</a></li>
                 <li>{{ $product->name }}</li>
             </ul>
         </div>
@@ -122,7 +122,7 @@
             </div>
             <div class="ps-section--default ps-customer-bought">
                 <div class="ps-section__header">
-                    <h3>ဝယ်ယူသူများဝယ်ယူမူ့များသောပစ္စည်းများ</h3>
+                    <h3>Best Selling Bags</h3>
                 </div>
                 <div class="ps-section__content">
                     <div class="row">
@@ -140,14 +140,14 @@
                                         <div class="ps-product__badge hot" style="{{ $product->quantity <= 2 & $product->discountPercent == null & $product->quantity != 0 ? 'display:initial': 'display:none' }}">hot</div>
                                         @endif
                                         <ul class="ps-product__actions">
-                                            <li><a href="{{ route('shop.show', $product->slug) }}" data-toggle="tooltip" data-placement="top" title="ကြည့်ရန်"><i class="icon-bag2"></i></a></li>
-                                            <li><a href="{{ route('shop.show', $product->slug) }}" data-placement="top" title="အမြန်ကြည့်ရန်" data-toggle="modal" data-target="#product-quickview"><i class="icon-eye"></i></a></li>
+                                            <li><a href="{{ route('shop.show', $product->slug) }}" data-toggle="tooltip" data-placement="top" title="Watch"><i class="icon-bag2"></i></a></li>
+                                            <li><a href="{{ route('shop.show', $product->slug) }}" data-placement="top" title="Look Up" data-toggle="modal" data-target="#product-quickview"><i class="icon-eye"></i></a></li>
                                             <form action="{{ route('cart.store') }}" method="POST">
                                             @csrf
                                                 <input type="hidden" name="id" value="{{ $product->id }}">
                                                 <input type="hidden" name="name" value="{{ $product->name }}">
                                                 <input type="hidden" name="price" value="{{ $product->price * (1 - $product->discountPercent / 100) }}">
-                                                <li><button href="" data-toggle="tooltip" data-placement="top" title="ခြင်းထဲထည့်ရန်"><i class="icon-heart"></i></button></li>	
+                                                <li><button href="" data-toggle="tooltip" data-placement="top" title="Add to cart"><i class="icon-heart"></i></button></li>	
                                             </form>
                                         </ul>
                                     </div>
@@ -167,7 +167,7 @@
             </div>
             <div class="ps-section--default">
                 <div class="ps-section__header">
-                    <h3>အမျိုးအစားတူပစ္စည်းများ</h3>
+                    <h3>Similar Bags</h3>
                 </div>
                 <div class="ps-section__content">
                     <div class="ps-carousel--nav owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="10000" data-owl-gap="30" data-owl-nav="true" data-owl-dots="true" data-owl-item="6" data-owl-item-xs="2" data-owl-item-sm="2" data-owl-item-md="3" data-owl-item-lg="4" data-owl-item-xl="5" data-owl-duration="1000" data-owl-mousedrag="on">
@@ -184,14 +184,14 @@
                                     <div class="ps-product__badge hot" style="{{ $product->quantity <= 2 & $product->discountPercent == null & $product->quantity != 0 ? 'display:initial': 'display:none' }}">hot</div>
                                     @endif
                                     <ul class="ps-product__actions">
-                                        <li><a href="{{ route('shop.show', $categoryproduct->slug) }}" data-toggle="tooltip" data-placement="top" title="ကြည့်ရန်"><i class="icon-bag2"></i></a></li>
-                                        <li><a href="{{ route('shop.show', $categoryproduct->slug) }}" data-placement="top" title="အမြန်ကြည့်ရန်" data-toggle="modal" data-target="#product-quickview"><i class="icon-eye"></i></a></li>
+                                        <li><a href="{{ route('shop.show', $categoryproduct->slug) }}" data-toggle="tooltip" data-placement="top" title="Watch"><i class="icon-bag2"></i></a></li>
+                                        <li><a href="{{ route('shop.show', $categoryproduct->slug) }}" data-placement="top" title="Look Up" data-toggle="modal" data-target="#product-quickview"><i class="icon-eye"></i></a></li>
                                         <form action="{{ route('cart.store') }}" method="POST">
                                         @csrf
                                             <input type="hidden" name="id" value="{{ $categoryproduct->id }}">
                                             <input type="hidden" name="name" value="{{ $categoryproduct->name }}">
                                             <input type="hidden" name="price" value="{{ $categoryproduct->price * (1 - $categoryproduct->discountPercent / 100) }}">
-                                            <li><button data-toggle="tooltip" data-placement="top" title="ခြင်းထဲထည့်ရန်"><i class="icon-heart"></i></button></li>	
+                                            <li><button data-toggle="tooltip" data-placement="top" title="Add to cart"><i class="icon-heart"></i></button></li>	
                                         </form>
                                     </ul>
                                 </div>
