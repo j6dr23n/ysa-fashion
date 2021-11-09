@@ -8,7 +8,7 @@
 
 @section('content')
     <div class="ps-page--comming-soon">
-        <div class="container">
+        <div class="container-fluid">
             <div class="ps-page__header"><a class="ps-logo" href="index.html"><img src="img/coming-soon-logo.png" alt=""></a>
                 <h1> Coming Soon</h1>
                 <p>Condimentum ipsum a adipiscing hac dolor set consectetur urna commodo elit parturient</p><a>molestie ut nisl partu convallier ullamcorpe.</a>

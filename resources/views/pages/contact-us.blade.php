@@ -11,7 +11,7 @@
         <div class="ps-breadcrumb">
             <div class="container">
                 <ul class="breadcrumb">
-                    <li><a href="{{ route('index.page') }}">ပင်မ</a></li>
+                    <li><a href="{{ route('index.page') }}">Home</a></li>
                     <li>Contact Us</li>
                 </ul>
             </div>
@@ -20,7 +20,7 @@
             <iframe src="" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
         <div class="ps-contact-info">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="ps-section__header">
                     <h3>Contact Us For Any Questions</h3>
                 </div>

@@ -28,9 +28,10 @@ class SocialiteController extends Controller
        ],[
            'name' => $user->getName(),
            'email' => $user->getEmail(),
+           'avatar' => $user->getAvatar(),
            'password' => Hash::make($user->getName().'@'.$user->getId())
             ]);
-
+         
        Auth::login($saveUser);
 
        return redirect()->route('index.page');

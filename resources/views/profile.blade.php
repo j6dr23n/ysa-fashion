@@ -22,7 +22,7 @@
                     <div class="col-lg-4">
                         <div class="ps-section__left">
                             <aside class="ps-widget--account-dashboard">
-                                <div class="ps-widget__header"><img src="img/users/3.jpg" alt="">
+                                <div class="ps-widget__header"><img src="{{ $user->avatar != null ? $user->avatar : 'img/users/3.jpg' }}" alt="">
                                     <figure>
                                         <figcaption>{{ $user->name }}</figcaption>
                                         <p>{{ $user->email }}</p>
