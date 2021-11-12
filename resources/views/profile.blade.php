@@ -211,12 +211,14 @@
                                                     <th>Order No.</th>
                                                     <th>Name</th>
                                                     <th>Date</th>
+                                                    <th>Color</th>
+                                                    <th>Size</th>
                                                     <th>Totals</th>
                                                     <th>Status</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <!-- @foreach ($orders as $order)
+                                                @foreach ($orders as $order)
                                                     <tr>
                                                         <td><a href="invoice-detail.html">{{ $order->id }}</a></td>
                                                         <td>
@@ -225,10 +227,20 @@
                                                             @endforeach
                                                         </td>
                                                         <td>{{ $order->created_at->toDateString() }}</td>
+                                                        <td>
+                                                            @foreach ($order->products as $item)
+                                                                {{ $item->pivot->color }}
+                                                            @endforeach
+                                                        </td>
+                                                        <td>
+                                                            @foreach ($order->products as $item)
+                                                                {{ $item->pivot->size }}
+                                                            @endforeach
+                                                        </td>
                                                         <td>{{ $order->total }}</td>
                                                         <td style="background-color: {{ $order->delivered == 1 ? 'green' : 'red' }};font-weight:bold;color:black;text-align:center;">{{ $order->delivered == 1 ? 'Delivered' : 'Not Delivered' }}</td>
                                                     </tr>
-                                                @endforeach -->
+                                                @endforeach
                                             </tbody>
                                         </table>
                                     </div>

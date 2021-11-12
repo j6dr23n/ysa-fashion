@@ -72,7 +72,7 @@ class IndexController extends Controller
     {   
         if (Auth::check()) {
             $user = Auth::user();
-            $orders = [];
+            $orders = Order::where('user_id', $user->id)->get();
             return view('profile')->with([
                 'user' => $user,
                 'orders' => $orders,

@@ -55,13 +55,13 @@ class CartController extends Controller
         });
         
         if($duplicates->isNotEmpty()){
-            return redirect()->route('cart.index')->with('success_message','ဈေးခြင်းထဲတွင်ရှိပြီးသားပစ္စည်းပါ');
+            return redirect()->route('cart.index')->with('success_message','This item is already in your cart.');
         }
 
-        Cart::add(['id' => $request->id, 'name' => $request->name,'qty' => 1, 'price' => $request->price,'weight' => 550,'options' => ['color' => $request->color]])
+        Cart::add(['id' => $request->id, 'name' => $request->name,'qty' => 1, 'price' => $request->price,'weight' => 550,'options' => ['color' => $request->color,'size' => $request->size]])
               ->associate('App\Models\Product');
 
-        return redirect()->route('cart.index')->with('success_message','ဈေးခြင်းထဲတွင်သိမ်းဆည်းပြီးပါပြီ');
+        return redirect()->route('cart.index')->with('success_message','Item added');
     }
 
     /**
@@ -100,7 +100,7 @@ class CartController extends Controller
         ]);
 
         if($validator->fails()){
-            session()->flash('errors',collect(['အရေအတွက်(၁)ခုမှ(၅)ခုအတွင်းသာရှိရပါမည်']));
+            session()->flash('errors',collect(['Quantity must betweeb 1 to 5.']));
 
             return response()->json(['success' => false], 400);
         }
@@ -113,7 +113,7 @@ class CartController extends Controller
 
         Cart::update($id,$request->quantity,$request->color);
 
-        session()->flash('success_message','အရေအတွက်တိုးပြီးပါပြီ');
+        session()->flash('success_message','Quantity Updated');
 
         return response()->json(['success' => true]);
     }
@@ -128,7 +128,7 @@ class CartController extends Controller
     {
         Cart::remove($id);
 
-        return back()->with('success_message','ပစ္စည်းကိုဖယ်ရှားပြီးပါပြီ!!!');
+        return back()->with('success_message','Item Removed');
     }
 
     /**
@@ -148,13 +148,13 @@ class CartController extends Controller
         });
         
         if($duplicates->isNotEmpty()){
-            return redirect()->route('cart.save')->with('success_message','ဈေးလှည်းထဲတွင်ရှိပြီးသားပစ္စည်းပါ');
+            return redirect()->route('cart.save')->with('success_message','This item already in your cart.');
         }
 
         Cart::instance('saveCart')->add($item->id, $item->name,1,$item->price)
               ->associate('App\Models\Product');
 
-        return redirect()->route('cart.save')->with('success_message','ဈေးလှည်းထဲတွင်သိမ်းဆည်းပြီးပါပြီ');
+        return redirect()->route('cart.save')->with('success_message','Item added');
     }
 
     private function getNumbers()

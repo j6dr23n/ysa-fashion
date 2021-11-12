@@ -77,13 +77,24 @@
                                             @endforeach
                                         </select>
                                         </figure>
+                                        <figure>
+                                            <figcaption style="color:black;font-size:16px">Size</figcaption>
+                                            @php
+                                                $product_size = explode(',',$product->size);
+                                            @endphp
+                                            <select name="size" class="select-product-color" style="margin-bottom: 3%;">
+                                            @foreach ($product_size as $size)
+                                                <option value="{{ $size }}">{{ ucwords($size) }}</option>
+                                            @endforeach
+                                        </select>
+                                        </figure>
                                     </div>
                                     <div class="ps-product__shopping">
                                         <div style="margin:15px 0;"></div>
                                             <input type="hidden" name="id" value="{{ $product->id }}">
                                             <input type="hidden" name="name" value="{{ $product->name }}">
                                             <input type="hidden" name="price" value="{{ $product->price * (1 - $product->discountPercent / 100) }}">
-                                            <button class="ps-btn" {{ $product->quantity == 0 ? 'disabled' : ''  }}>{{ $product->quantity == 0 ? 'ပစ္စည်းမရှိပါ။' : 'ခြင်းထဲထည့်ရန်'  }}</buttton>
+                                            <button class="ps-btn" {{ $product->quantity == 0 ? 'disabled' : ''  }}>{{ $product->quantity == 0 ? 'Out of stock' : 'Add to cart'  }}</buttton>
                                     </div>
                                     <div class="ps-product__specification"><a class="report" href="mailto:ysablow@gmail.com">Report Abuse</a>
                                         @php

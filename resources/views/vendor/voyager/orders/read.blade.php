@@ -44,9 +44,10 @@
                     <div class="panel-heading" style="padding-bottom:0;">
                         <h3 class="panel-title">Products</h3>
                     </div>
-                    <div class="panel-body" style="border-top:0;">
+                    <div class="panel-body " style="border-top:0;">
                         <h2 style="text-align: center"><b>Products</b></h2>
-                                <table class="table table-bordered table-dark">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-dark table-responsive">
                                     <thead class="thead-dark">
                                       <tr>
                                         <th>Image</th>
@@ -54,6 +55,7 @@
                                         <th>Single Price</th>
                                         <th>Quantity</th>
                                         <th>Color</th>
+                                        <th>Size</th>
                                       </tr>
                                     </thead>
                                     <tbody>
@@ -64,10 +66,12 @@
                                         <td><p style="font-weight:bold; font-size:18px;">{{ presentPrice($product->price) }}</p></td>
                                         <td><p style="font-weight:bold; font-size:18px;">{{ $product->pivot->quantity }}</p></td>
                                         <td><p style="font-weight: bold">{{ $product->pivot->color }}</p></td>
+                                        <td><p style="font-weight: bold">{{ $product->pivot->size }}</p></td>
                                       </tr>
                                       @endforeach
                                     </tbody>
                                 </table>
+                            </div>
                     </div>
                     <!-- form start -->
                     @foreach($dataType->readRows as $row)

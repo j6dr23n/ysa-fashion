@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="ps-section--shopping ps-shopping-cart">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="ps-section__header">
                     <h1>Cart({{ Cart::count() }})</h1>
                     <br>
@@ -49,6 +49,7 @@
                                     <th>Quantity</th>
                                     {{-- <th>ရွှေးချယ်ထားရန်</th> --}}
                                     <th>Color</th>
+                                    <th>Size</th>
                                     <th>Totals</th>
                                     <th><i class="icon-cross"></i></th>
                                 </tr>
@@ -76,6 +77,9 @@
                                         </td>
                                         <td style="text-align: center;">
                                             <p>{{ucwords($item->options->color)}}</p>
+                                        </td>
+                                        <td style="text-align: center;">
+                                            <p>{{ucwords($item->options->size)}}</p>
                                         </td>
                                         <td style="text-align: center;">{{ presentPrice($item->subtotal()) }} {{ $item->model->discountPercent > 0 ? '(-'.$item->model->discountPercent.'%)' : '' }}</td>
                                         <td>

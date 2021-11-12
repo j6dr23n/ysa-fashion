@@ -132,6 +132,7 @@ class OrderController extends Controller
                 'product_id' => $item->model->id,
                 'quantity' => $item->qty,
                 'color' => $item->options->color,
+                'size' => $item->options->size
             ]);
         }
 
