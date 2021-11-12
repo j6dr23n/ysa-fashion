@@ -1,20 +1,17 @@
 <?php
 
-use App\Http\Controllers\BasicUserController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\ConfirmationController;
 use App\Http\Controllers\CouponsController;
 use App\Http\Controllers\IndexController;
-use App\Http\Controllers\FaceBookController;
-use App\Http\Controllers\NavbarController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\SaveCartController;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\SocialiteController;
+use App\Http\Controllers\UsersController;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 use TCG\Voyager\Facades\Voyager;
 
@@ -68,6 +65,7 @@ Auth::routes();
 Route::middleware(['auth'])->group(function () {
 
     Route::get('/profile',[IndexController::class,'profile'])->name('profile.index');
+    Route::post('/profile',[UsersController::class, 'infoUpdate'])->name('user.update');
 
     Route::get('/thankyou',[ConfirmationController::class,'index'])->name('confirmation.index');
 

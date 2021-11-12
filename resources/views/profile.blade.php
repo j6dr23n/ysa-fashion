@@ -17,7 +17,7 @@
             </div>
         </div>
         <section class="ps-section--account">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="ps-section__left">
@@ -48,9 +48,9 @@
                         </div>
                     </div>
                     <div class="ps-tabs col-lg-8">
-                        <!-- <div class="ps-section__right ps-tab active" id="profile">
+                        <div class="ps-section__right ps-tab active" id="profile">
                             
-                            @if ($user->Username == null)
+                            {{-- @if ($user->Username == null)
                             <form class="ps-form--account-setting" action="" method="POST">
                             @csrf
                                 <div class="ps-form__header">
@@ -145,9 +145,9 @@
                                 </div>
                             </form>
                             <div style="border-top:2px solid black"></div>
-                            @endif
+                            @endif --}}
 
-                            <form class="ps-form--account-setting" action="" method="POST">
+                            <form class="ps-form--account-setting" action="{{ route('user.update')}}" method="POST">
                             @csrf
                                 <div class="ps-form__header">
                                     <br>
@@ -170,40 +170,33 @@
                                 <div class="ps-form__content">
                                     <div class="form-group">
                                         <label>Phone Number</label>
-                                        <input class="form-control" name="PhNumber" type="text" placeholder="{{ $user->PhNumber != null ? '+95-'.$user->PhNumber : 'Please enter your phone number...' }}">
+                                        <input class="form-control" name="ph_number" type="text" placeholder="{{ $user->PhNumber != null ? '+95-'.$user->PhNumber : 'Please enter your phone number...' }}">
                                     </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>Address Line 1</label>
-                                                <input class="form-control" name="AddressLine1" type="text" placeholder="{{ $user->AddressLine1 != null ? $user->AddressLine1 : 'Please enter your address...' }}">
-                                            </div>
+                                    <div class="form-group">
+                                        <label>Address</label>
+                                        <input class="form-control" name="address" type="text" placeholder="{{ $user->AddressLine1 != null ? $user->AddressLine1 : 'Please enter your address...' }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Birthday</label>
+                                        <input class="form-control" name="birthday" type="date" placeholder="{{ $user->birthday != null ? $user->birthday : 'Please enter your Birthday...' }}">
+                                    </div>
+                                    <div class="input-group input-group-lg ">
+                                        <div class="input-group-prepend">
+                                          <label class="input-group-text" for="inputGroupSelect01">Gender</label>
                                         </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>Address Line 2</label>
-                                                <input class="form-control" name="AddressLine2" type="text" placeholder="{{ $user->AddressLine2 != null ? $user->AddressLine2 : 'Please enter your address...' }}">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>City</label>
-                                                <input class="form-control" name="City" type="text" placeholder="{{ $user->City != null ? $user->City : 'Please enter your city...' }}">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label>State</label>
-                                                <input class="form-control" name="State" type="text" placeholder="{{ $user->State != null ? $user->State : 'Please enter your state...' }}">
-                                            </div>
-                                        </div>
+                                        <select class="custom-select" id="inputGroupSelect01" name="gender">
+                                          <option value="female">Female</option>
+                                          <option value="male">Male</option>
+                                          <option value="other">Other</option>
+                                        </select>
                                     </div>
                                 </div>
+                                <br>
                                 <div class="form-group submit">
-                                    <button class="ps-btn" type="submit" {{ $user->PhNumber != null ? 'disabled' : ''  }}>Submit</button>
+                                    <button class="ps-btn" type="submit">Submit</button>
                                 </div>
                             </form>
-                        </div> -->
+                        </div>
                         <div class="ps-section__right ps-tab" id="invoices">
                             <br>
                             <div class="ps-section--account-setting">
