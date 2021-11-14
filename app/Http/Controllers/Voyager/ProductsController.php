@@ -359,33 +359,37 @@ class ProductsController extends VoyagerBaseController
         if($request->fbpost == "on"){
 
         $request->validate([
-            'image' => 'required|image'
+            'image' => 'required|image',
+            'slug' => 'required'
         ]); 
 
         $fb = new \Facebook\Facebook([
-            'app_id' => '',
-            'app_secret' => '',
-            'default_graph_version' => 'v8.0',
-            'default_access_token' => '', // optional
+            'app_id' => '592836911834424',
+            'app_secret' => 'd19d9c47b08b1940687a38b07175dd33',
+            'default_graph_version' => 'v12.0',
+            'default_access_token' => 'EAAIbLpmKJTgBACf4bjEI34FZA8oNQTDSOj2DZA09oGT6xqiaTgzIFx8ahHsZA0UKcyfLkhioiUdvIUo3sj2RUx5NKX6jEF6ppN6Fmxta8Ir5mZB2s2KM6NbwGVWc5ZCsXMsuG04dXlmPbKosK7OMoSQw28uNVRZCN4fdjAc5lNhXYw6znD2WqWpHPmHC7UdyhgjZBlO4uZB2ZBVWE3ihWrtlP', // optional
             ]);
 
-            $access_token = '';
+            $access_token = 'EAAIbLpmKJTgBALvqZBsZCuAiZAmdorh3u939cFvQR0kQNq7KkNRcc1kd0LsCP0Iigi7g3ohbicEtgEIUofS9EdjZBtdq40Y035Mqo247y6ZBASF7JaGgYwgzJkUlbTPxfI0ZBrZAAMYyWYP2atwEhSWNMRuJy7wOAOXxZAL1HnfoeQQ2C0y67bFrFrLIZBjCt6A9OvIA6eponeZCd1KTDwRF6K';
         try {
 
-            $description = nl2br($request->description);
-            $description = strip_tags($request->description);
-            $description = str_replace("&nbsp;"," ",$description);
+            $details = nl2br($request->details);
+            $details = strip_tags($request->details);
+            $details = str_replace("&nbsp;"," ",$details);
+            $link = 'https://staging.ysafashion.com/shop/'.$request->slug;
 
             $data = [
                 'message' => "
 $request->name
 
-$description
+$details
+
+For more details ->  $link
 ",
                 'source' => $fb->fileToUpload($request->image),
             ];
 
-            $response = $fb->post('/575814903055402/photos',$data,$access_token);
+            $response = $fb->post('/109387564808248/photos',$data,$access_token);
 
 
             } catch(\Facebook\Exceptions\FacebookResponseException $e) {
@@ -475,48 +479,52 @@ $description
         $val = $this->validateBread($request->all(), $dataType->addRows)->validate();
         $data = $this->insertUpdateData($request, $slug, $dataType->addRows, new $dataType->model_name());
 
-//         //Integrating fb auto post
-//         if($request->fbpost == "on"){
+        //Integrating fb auto post
+        if($request->fbpost == "on"){
 
-//         $request->validate([
-//             'image' => 'required|image'
-//         ]); 
-
-//         $fb = new \Facebook\Facebook([
-//             'app_id' => '',
-//             'app_secret' => '',
-//             'default_graph_version' => 'v8.0',
-//             'default_access_token' => '', // optional
-//             ]);
-
-//             $access_token = '';
-//         try {
-
-//             $description = nl2br($request->description);
-//             $description = strip_tags($request->description);
-//             $description = str_replace("&nbsp;"," ",$description);
-
-//             $data = array(
-//                 'message' => "
-// $request->name
-
-// $description
-// ",
-//                 'source' => $fb->fileToUpload($request->image),
-//             );
-
-//             $response = $fb->post('/575814903055402/photos',$data,$access_token);
-
-
-//             } catch(\Facebook\Exceptions\FacebookResponseException $e) {
-//             echo 'Graph returned an error: ' . $e->getMessage();
-//             exit;
-//             } catch(\Facebook\Exceptions\FacebookResponseException $e) {
-//             echo 'Facebook SDK returned an error: ' . $e->getMessage();
-//             exit;
-//             }
-//             $response->getGraphNode();
-//         }
+            $request->validate([
+                'image' => 'required|image',
+                'slug' => 'required'
+            ]); 
+    
+            $fb = new \Facebook\Facebook([
+                'app_id' => '592836911834424',
+                'app_secret' => 'd19d9c47b08b1940687a38b07175dd33',
+                'default_graph_version' => 'v12.0',
+                'default_access_token' => 'EAAIbLpmKJTgBACf4bjEI34FZA8oNQTDSOj2DZA09oGT6xqiaTgzIFx8ahHsZA0UKcyfLkhioiUdvIUo3sj2RUx5NKX6jEF6ppN6Fmxta8Ir5mZB2s2KM6NbwGVWc5ZCsXMsuG04dXlmPbKosK7OMoSQw28uNVRZCN4fdjAc5lNhXYw6znD2WqWpHPmHC7UdyhgjZBlO4uZB2ZBVWE3ihWrtlP', // optional
+                ]);
+    
+                $access_token = 'EAAIbLpmKJTgBALvqZBsZCuAiZAmdorh3u939cFvQR0kQNq7KkNRcc1kd0LsCP0Iigi7g3ohbicEtgEIUofS9EdjZBtdq40Y035Mqo247y6ZBASF7JaGgYwgzJkUlbTPxfI0ZBrZAAMYyWYP2atwEhSWNMRuJy7wOAOXxZAL1HnfoeQQ2C0y67bFrFrLIZBjCt6A9OvIA6eponeZCd1KTDwRF6K';
+            try {
+    
+                $details = nl2br($request->details);
+                $details = strip_tags($request->details);
+                $details = str_replace("&nbsp;"," ",$details);
+                $link = 'https://staging.ysafashion.com/shop/'.$request->slug;
+    
+                $data = [
+                    'message' => "
+    $request->name
+    
+    $details
+    
+    For more details ->  $link
+    ",
+                    'source' => $fb->fileToUpload($request->image),
+                ];
+    
+                $response = $fb->post('/109387564808248/photos',$data,$access_token);
+    
+    
+                } catch(\Facebook\Exceptions\FacebookResponseException $e) {
+                echo 'Graph returned an error: ' . $e->getMessage();
+                exit;
+                } catch(\Facebook\Exceptions\FacebookResponseException $e) {
+                echo 'Facebook SDK returned an error: ' . $e->getMessage();
+                exit;
+                }
+                $response->getGraphNode();
+            }
 
         event(new BreadDataAdded($dataType, $data));
 
