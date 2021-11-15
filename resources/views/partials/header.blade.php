@@ -8,16 +8,16 @@
                             <ul class="menu--dropdown">
                                 @foreach (App\Models\Category::with('childs')->where('p_id',0)->get() as $item)
                                 <li class="current-menu-item menu-item-has-children has-mega-menu"><a href="{{ route('shop.index',['category' => $item->slug]) }}"><img src="{{ productImage($item->image) }}" width="25px" height="25px" alt=""> {{ $item->name }}</a>
-                                    <div class="mega-menu">
+                                    {{-- <div class="mega-menu">
                                         <div class="mega-menu__column">
-                                            <h4>{{ $item->name }}<span class="sub-toggle"></span></h4>
+                                            <h4><a href="{{ route('shop.index',['category' => $item->slug]) }}">{{ $item->name }}</a><span class="sub-toggle"></span></h4>
                                             <ul class="mega-menu__list">
                                                 @foreach ($item->childs as $itemChilds)
                                                 <li class="current-menu-item "><a href="{{ route('shop.index',['category' => $itemChilds->slug]) }}">{{ $itemChilds->name }}</a></li>
                                                 @endforeach
                                             </ul>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </li>
                                 @endforeach
                             </ul>
@@ -76,8 +76,8 @@
                         <div class="menu__content">
                             <ul class="menu--dropdown">
                                 @foreach (App\Models\Category::with('childs')->where('p_id',0)->get() as $item)
-                                <li class="current-menu-item menu-item-has-children has-mega-menu"><a href="#"><img src="{{ productImage($item->image) }}" width="25px" height="25px" alt=""> {{ $item->name }}</a>
-                                    <div class="mega-menu">
+                                <li class="current-menu-item menu-item-has-children has-mega-menu"><a href="{{ route('shop.index',['category' => $item->slug]) }}"><img src="{{ productImage($item->image) }}" width="25px" height="25px" alt=""> {{ $item->name }}</a>
+                                    {{-- <div class="mega-menu">
                                         <div class="mega-menu__column">
                                             <h4><a href="{{ route('shop.index',['category' => $item->slug]) }}" style="font-weight: bolder;">{{ $item->name }}</a></h4>
                                             <ul class="mega-menu__list">
@@ -86,7 +86,7 @@
                                                 @endforeach
                                             </ul>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </li>
                                 @endforeach
                             </ul>

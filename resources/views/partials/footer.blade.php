@@ -8,7 +8,7 @@
                         <h3>+9595094762 </h3>
                         <p>No.280/5 , Kyaung Street , Lane (2) , Thuwana , Yangon.<br><br><a href="mailto:ysablow@gmail.com">ysablow@gmail.com</a></p>
                         <ul class="ps-list--social">
-                            <li><a class="facebook" href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="facebook" href="https://www.facebook.com/YSA-Fashion-109387564808248"><i class="fa fa-facebook"></i></a></li>
                             <li><a class="google-plus" href="mailto:ysablow@gmail.com"><i class="fa fa-google-plus"></i></a></li>
                             <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
                         </ul>

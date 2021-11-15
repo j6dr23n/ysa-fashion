@@ -101,7 +101,7 @@
                                     <div class="ps-product__specification"><a class="report" href="mailto:ysablow@gmail.com">Report Abuse</a>
                                         @php
                                             $categoriesName = explode(',',$CategoryName);
-                                            $ch = '-';  
+                                            $ch = '';  
                                         @endphp
                                         <p class="categories"><strong> Categories:</strong>
                                             @foreach ($categoriesName as $category)
