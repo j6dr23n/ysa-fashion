@@ -77,17 +77,19 @@
                                             @endforeach
                                         </select>
                                         </figure>
-                                        <figure>
-                                            <figcaption style="color:black;font-size:16px">Size</figcaption>
-                                            @php
-                                                $product_size = explode(',',$product->size);
-                                            @endphp
-                                            <select name="size" class="select-product-color" style="margin-bottom: 3%;">
-                                            @foreach ($product_size as $size)
-                                                <option value="{{ $size }}">{{ ucwords($size) }}</option>
-                                            @endforeach
-                                        </select>
-                                        </figure>
+                                        @if($product->size != null)
+                                            <figure>
+                                                <figcaption style="color:black;font-size:16px">Size</figcaption>
+                                                @php
+                                                    $product_size = explode(',',$product->size);
+                                                @endphp
+                                                <select name="size" class="select-product-color" style="margin-bottom: 3%;">
+                                                @foreach ($product_size as $size)
+                                                    <option value="{{ $size }}">{{ ucwords($size) }}</option>
+                                                @endforeach
+                                            </select>
+                                            </figure>
+                                        @endif
                                     </div>
                                     <div class="ps-product__shopping">
                                         <div style="margin:15px 0;"></div>
