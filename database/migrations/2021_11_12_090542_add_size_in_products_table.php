@@ -14,7 +14,7 @@ class AddSizeInProductsTable extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->string('size')->after('color');
+            $table->string('size')->after('color_name');
         });
     }
 

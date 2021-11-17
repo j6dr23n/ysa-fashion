@@ -11,7 +11,7 @@
     <meta name="keywords" content="ysa fashion">
     <meta name="description" content="Ysa Fashion Online Shop | Bag Shop">
     <title>@yield('title', '') | YSA-OnlineShop</title>
-    <link rel="icon" type="image/x-icon" href="/img/bg/logo.png" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/bg/logo.png') }}" />
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&amp;amp;subset=latin-ext" rel="stylesheet">
     {{-- <link rel="stylesheet" href="{{ asset('plugins/font-awesome/css/font-awesome.min.css')}}"> --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css"/>

@@ -170,11 +170,11 @@
                                 <div class="ps-form__content">
                                     <div class="form-group">
                                         <label>Phone Number</label>
-                                        <input class="form-control" name="ph_number" type="text" placeholder="{{ $user->PhNumber != null ? '+95-'.$user->PhNumber : 'Please enter your phone number...' }}">
+                                        <input class="form-control" name="ph_number" type="text" placeholder="{{ $user->ph_number != null ? '+95-'.$user->ph_number : 'Please enter your phone number...' }}">
                                     </div>
                                     <div class="form-group">
                                         <label>Address</label>
-                                        <input class="form-control" name="address" type="text" placeholder="{{ $user->AddressLine1 != null ? $user->AddressLine1 : 'Please enter your address...' }}">
+                                        <input class="form-control" name="address" type="text" placeholder="{{ $user->address != null ? $user->address : 'Please enter your address...' }}">
                                     </div>
                                     <div class="form-group">
                                         <label>Birthday</label>

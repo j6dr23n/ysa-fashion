@@ -22,7 +22,7 @@
                                 @endforeach
                             </ul>
                         </div>
-                    </div><a class="ps-logo" href="{{ route('index.page') }}"><img src="{{ asset('img/bg/logo.png') }}" width="30px" height="30px" alt="" style="margin-right: 5px;"><img src="/img/ysa_fashion_typo.png" alt="logo.png" width="35px" height="35px" style="width:70%;"></a>
+                    </div><a class="ps-logo" href="{{ route('index.page') }}"><img src="{{ asset('img/bg/logo.png') }}" width="30px" height="30px" alt="" style="margin-right: 5px;"><img src="{{ asset('img/ysa_fashion_typo.png') }}" alt="logo.png" width="35px" height="35px" style="width:70%;"></a>
                 </div>
                 <div class="header__center">
                     <form class="ps-form--quick-search" action="{{ route('shop.search') }}" method="GET">
